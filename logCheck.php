@@ -8,7 +8,7 @@
 
 		$id = $_POST['id'];
 		$password = $_POST['pass'];
-
+             $name = $_POST['name'];
 		if(empty($id) == true || empty($password) == true){
 			echo "null submission!";
 		}else{
@@ -20,8 +20,9 @@
 				$_SESSION['id'] = $id;
 				$_SESSION['password'] = $password;
 
-				setcookie("userid", $id, time()+3600, "/");
-				header('location: home.php');
+				setcookie("username", $name, time()+3600, "/");
+				
+				header('location: userHome.php');
 
 			}else{
 				echo "invalid userid/password";

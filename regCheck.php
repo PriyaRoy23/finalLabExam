@@ -24,9 +24,6 @@
 			}
 		}
 
-	}else{
-		header('location: reg.php');
 	}
-
 
 ?>
