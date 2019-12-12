@@ -10,7 +10,7 @@
 		$id = $_POST['id'];
 		$cpass = $_POST['cpass'];
 
-		if(empty($name) == true || empty($password) == true || empty($email) == true  || empty($id) == true)  || empty($cpass) == true){
+		if(empty($name) == true || empty($password) == true || empty($email) == true || empty($id) == true || empty($cpass) == true){
 			echo "null submission!";
 		}else{
 
@@ -18,7 +18,7 @@
 
 			if($status){
 
-				header('location:login.php');
+				header('location: login.php');
 			}else{
 				header('location: reg.php');
 			}
